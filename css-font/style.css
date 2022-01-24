@@ -1,0 +1,123 @@
+/*Убираем отступы*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/*Меняет подсчет ширины блока для удобства верстания*/
+*,*::before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Убираем линии обводки у некоторых браузеров*/
+:focus, :active {
+    outline: none;
+}
+
+/*Убираем линии обводки у некоторых браузеров*/
+a:focus,a:active {
+    outline: none;
+}
+
+/*Делаем теги блочными*/
+nav,footer,header,aside {
+    display: block;
+}
+
+/*Уравнивают поведение шрифтов и элеметнов для разных браузеров*/
+html,body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    /*запрещает самовольное увеличение шрифта на iphone*/
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*Заставляем наследовать семейство шрифта для тегов*/
+input,button,textarea {
+    font-family: inherit;
+}
+
+/*Убирают некоторые особенности в разных браузерах*/
+input::-ms-clear {display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+/*Обнуление всех заголовков */
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+.arial {
+    /*Изменение шрифта*/
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.fontsize {
+    /*Размер шрифта*/
+    font-size: 30px;
+}
+
+.fontstyle {
+    /*Определяет начертание шрифта*/
+    font-style: italic;
+}
+
+.fontweight {
+    /*Устанавливает насыщенность шрифта*/
+    font-weight: 700;
+}
+
+.textalign {
+    /*Определяет горизонтальное выравнивание текста*/
+    text-align: right;
+}
+
+.textdecoration {
+    /*Добавляет оформление текста*/
+    text-decoration: underline;
+}
+
+.textshadow {
+    /*Добавляет тень к тексту*/
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.texttransform {
+    /*Заглавные или прописные символы*/
+    text-transform: capitalize;
+}
+
+.textident {
+    /*Величина отступа первой строки блока текста*/
+    text-indent: 50px;
+}
+
+.letterspacing {
+    /*Определяет интервал между символами*/
+    letter-spacing: 5px;
+}
+
+.wordspacing {
+    /*Устанавливает интервал между словами*/
+    word-spacing: 5px;
+}
+
+.whitespace {
+    /*Управляет свойствами пробелов между словами*/
+    white-space: normal;
+}
+
+.lineheight {
+    /*Устанавливает межстрочный интервал текста*/
+    line-height: 40px;
+}
