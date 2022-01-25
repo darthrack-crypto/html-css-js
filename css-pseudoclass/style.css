@@ -1,0 +1,144 @@
+/*Убираем отступы*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/*Меняет подсчет ширины блока для удобства верстания*/
+*,*::before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Убираем линии обводки у некоторых браузеров*/
+:focus, :active {
+    outline: none;
+}
+
+/*Убираем линии обводки у некоторых браузеров*/
+a:focus,a:active {
+    outline: none;
+}
+
+/*Делаем теги блочными*/
+nav,footer,header,aside {
+    display: block;
+}
+
+/*Уравнивают поведение шрифтов и элеметнов для разных браузеров*/
+html,body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    /*запрещает самовольное увеличение шрифта на iphone*/
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*Заставляем наследовать семейство шрифта для тегов*/
+input,button,textarea {
+    font-family: inherit;
+}
+
+/*Убирают некоторые особенности в разных браузерах*/
+input::-ms-clear {display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+/*Обнуление всех заголовков */
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+body {
+    padding: 30px;
+}
+
+.block {
+    margin: 0 0 30px 0;
+}
+
+.block p {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 0px 20px 0px;
+}
+
+.link {
+    color: red;
+}
+
+.link:visited {
+    color: green;
+}
+
+/*наведение*/
+.link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/*нажатие*/
+.link:active {
+    color: black;
+}
+
+
+.textinput {
+    border: 1px solid #666;
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 18px;
+    width: 300px;
+    margin: 0px 0px 10px 0px;
+}
+
+/*при попадании в поле ввода*/
+.textinput:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.textbutton {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: #666;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0px 0px 30px 0px;
+}
+
+.textbutton:hover {
+    background-color: #333;
+    color: yellow;
+}
+
+.list {}
+
+.list li {
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
+}
+
+/*обращение к певому элементу в блоке*/
+.list li:first-child {
+    color: green;
+}
+
+/*обращение к последнему элементу в блоке*/
+.list li:last-child {
+    color: yellow;
+}
+
+/*обращение к конкретному элементу в блоке (odd - нечетные) (even - четные)*/
+.list li:nth-child(3) {
+    color: tomato;
+}
